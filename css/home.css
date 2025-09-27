@@ -1,0 +1,138 @@
+.search-box {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 6px 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  cursor: pointer;
+}
+
+.home {
+  background: linear-gradient(135deg, #000000, #132f6a, #127ab3);
+}
+
+.search-box:hover {
+  transition: all 0.6s;
+  box-shadow: 10px 10px 0px 10px#103483;
+}
+
+.search-box .icon {
+  margin-right: 8px;
+  font-size: 16px;
+  color: #777;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 14px;
+  color: #333;
+  background: none;
+  min-width: 0;
+  box-sizing: border-box;
+  padding-bottom: 60px;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-box button {
+  background: #3b5bfd;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: bold;
+  padding: 10px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 8px;
+}
+
+.home-section {
+  padding-bottom: 142px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home {
+  padding-top: 300px;
+}
+
+.home-left p {
+  color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  max-width: 456px;
+  margin-bottom: 47px;
+}
+
+.home-left h1 {
+  color: #fff;
+  font-family: Playfair Display SC;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 64px;
+  line-height: 125%;
+  letter-spacing: 0%;
+  max-width: 457px;
+  margin-bottom: 20px;
+}
+
+.search-box button:hover {
+  background: #0e1b64;
+}
+
+.home-right img {
+  width: 100%;
+}
+
+.home-section {
+  display: flex;
+  gap: 30px;
+}
+
+.home-right {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-right img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 480px) {
+  .search-box {
+    padding: 4px 8px;
+  }
+  .search-box input {
+    font-size: 12px;
+    padding: 8px;
+  }
+  .search-box button {
+    padding: 8px 14px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .home-section {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}

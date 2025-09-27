@@ -1,0 +1,134 @@
+span {
+  color: grey;
+}
+
+.watch {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  padding: 60px 0;
+}
+
+.span-div {
+  display: flex;
+}
+
+.child {
+  background: #e9dfdf;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 27px 42px;
+  padding-right: 27px;
+}
+
+.paragraf-div h5 {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 1102px;
+  color: #3858d6;
+  align-items: center;
+  text-align: center;
+}
+
+.paragraf-div {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-div {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.view-btn:hover {
+  background-color: rgb(229, 205, 174);
+  transition: all 0.7s;
+  color: #072d63;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.view-btn {
+  padding: 15px 30px;
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #cfacac;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.paragraf-div h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 1100px;
+  color: #547d8d;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.child:hover {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.child:hover {
+  transition: all 0.7s;
+  transform: translateY(-50px) scale(1.09);
+  background: linear-gradient(rgb(197, 175, 175));
+}
+
+.watch-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 100px 0px;
+}
+
+.child h4 {
+  font-family: Poppins;
+  font-weight: 600;
+  font-style: SemiBold;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 334px;
+  margin-bottom: 30px;
+}
+
+.child img {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1088px) {
+  .watch-section {
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 22px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 770px) {
+  .watch-section {
+    grid-template-columns: 1fr;
+  }
+}

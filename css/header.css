@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.menu-btn {
+  display: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(90deg, #000000, #0a0f2c);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-links {
+  color: #8b8e99;
+  font-family: Playfair Display SC;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav-links:hover {
+  color: #4cafef;
+  transition: all 0.6s;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  padding-top: 37px;
+  padding-bottom: 23px;
+}
+
+.search-btn {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 30px;
+}
+
+#searchInput {
+  display: none;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 9px;
+  padding: 10px 10px;
+  display: none;
+  width: 200px;
+  padding: 8px 12px;
+  border: 2px solid #4caf50;
+  border-radius: 25px;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+#nav-open {
+  display: none;
+  background-color: red;
+  border: none;
+  background-color: transparent;
+}
+
+#navbar-responsive {
+  backdrop-filter: blur(11px);
+  position: fixed;
+  top: 0;
+  left: -100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  transition: 0.5s;
+}
+
+.navbar-item {
+  margin-top: 27px;
+  font-size: 24px;
+}
+
+.navbar-link:hover {
+  color: #03001f;
+  transition: all 1s;
+}
+
+.navbar-link {
+  color: white;
+  margin-bottom: 60px;
+}
+
+#navbar-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  background-color: rgb(57, 17, 17);
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+#searchInput {
+  background-color: #ffffff;
+  color: #000000;
+  border: 3px solid #166463;
+  border-radius: 25px;
+  padding: 8px 12px;
+}
+
+@media (max-width: 1260px) {
+  header {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-list {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) {
+  .search-btn {
+    display: none;
+  }
+}

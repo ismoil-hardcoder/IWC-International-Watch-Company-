@@ -1,0 +1,76 @@
+.watch-child {
+  display: flex;
+  gap: 26px;
+}
+
+.watch3-section {
+  display: flex;
+  gap: 40px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.watch-child-right h3 {
+  font-family: Inter;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 36px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  max-width: 173px;
+  margin-bottom: 9px;
+  color: rgb(215, 224, 233);
+}
+
+.watch-child-right p {
+  font-family: Inter;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  max-width: 173px;
+  color: rgb(215, 224, 233);
+}
+
+.watch-child {
+  padding: 40px 32px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #0f0f0f, rgb(37, 37, 84), #4b2020);
+}
+
+.watch3-section {
+  padding-top: 100px 0px;
+}
+
+.watch-child:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.watch3 {
+  background: linear-gradient(
+    135deg,
+    #0a0a0f,
+    rgb(16, 16, 82),
+    rgb(97, 1, 84),
+    rgb(27, 23, 23),
+    #1a2a3a,
+    #491b78,
+    #e80808
+  );
+}
+
+@media (max-width: 1050px) {
+  .watch3-section {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 300px) {
+  .watch-child-left {
+    flex-wrap: wrap;
+  }
+}
