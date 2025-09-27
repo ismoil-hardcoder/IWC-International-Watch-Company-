@@ -1,17 +1,5 @@
-.search-box {
-  background: #fff;
-  display: flex;
-  align-items: center;
-  border-radius: 15px;
-  padding: 6px 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 500px;
-  cursor: pointer;
-}
-
 .home {
-  background: linear-gradient(135deg, #000000, #132f6a, #127ab3);
+  background: linear-gradient(135deg, #383638, #0b0b0b);
 }
 
 .search-box:hover {
@@ -19,20 +7,59 @@
   box-shadow: 10px 10px 0px 10px#103483;
 }
 
-.search-box .icon {
-  margin-right: 8px;
-  font-size: 16px;
-  color: #777;
+.input-box {
+  display: flex;
 }
 
-.search-box input {
-  flex: flex;
-  border: none;
+.results-box div {
   padding: 10px;
-  font-size: 14px;
-  color: #333;
-  background: none;
-  padding-bottom: 60px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+  color: white; /* Yozuvlarni oq qilish */
+  background: #061553; /* Orqa fonni ham quyuqroq qilib berdim */
+}
+
+.results-box div:hover {
+  background: #3858d6;
+  color: white;
+}
+
+.results-box {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: white;
+}
+
+.results-box div {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+}
+
+.results-box div:hover {
+  background: #3858d6;
+  color: white;
+}
+
+.input-box button:hover {
+  background-color: #061553;
+  transition: all 0.6s;
+}
+.input-box button {
+  padding: 15px 36px;
+  border: none;
+  border-radius: 8px;
+  background-color: #3858d6;
+  color: white;
+}
+
+.input-box input {
+  padding: 15px 56px;
+  border: none;
+  border-radius: 8px;
 }
 
 .search-box input::placeholder {

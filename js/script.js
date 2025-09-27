@@ -25,32 +25,6 @@ function closeNavbar() {
 document.getElementById("navbar-open").addEventListener("click", openNavbar);
 document.getElementById("navbar-close").addEventListener("click", closeNavbar);
 
-// Search tugmasini bosganda ishlaydi
-document.getElementById("searchBtn").addEventListener("click", function () {
-  let input = document.getElementById("searchInput").value;
-  if (input.trim() !== "") {
-    alert("You searched for: " + input);
-  } else {
-    alert("Please type something to search 😊");
-  }
-});
-document.getElementById("searchBtn").addEventListener("click", function () {
-  let input = document.getElementById("searchInput").value;
-  if (input.trim() !== "") {
-    alert("You searched for: " + input);
-  } else {
-    alert("Please type something to search 😊");
-  }
-});
-
-document
-  .getElementById("searchInput")
-  .addEventListener("keypress", function (event) {
-    if (event.key === "Enter") {
-      document.getElementById("searchBtn").click();
-    }
-  });
-
 // Buttonni oling
 const backToTopButton = document.getElementById("backToTop");
 
@@ -73,3 +47,61 @@ backToTopButton.addEventListener("click", function () {
     behavior: "smooth",
   });
 });
+
+const brands = [
+  "Rolex",
+  "Omega",
+  "Casio",
+  "Seiko",
+  "Tissot",
+  "Fossil",
+  "Swatch",
+  "Citizen",
+  "Tag Heuer",
+  "Patek Philippe",
+  "Breitling",
+  "Hublot",
+  "Cartier",
+  "Longines",
+  "Hamilton",
+  "Movado",
+  "Rado",
+  "Invicta",
+  "Bulova",
+  "Chopard",
+];
+
+const input = document.getElementById("brand-input");
+const button = document.getElementById("search-button");
+const results = document.getElementById("results");
+
+function showResults() {
+  const query = input.value.toLowerCase();
+  const filtered = brands.filter((b) => b.toLowerCase().includes(query));
+
+  // Tozalash
+  results.innerHTML = "";
+
+  if (filtered.length === 0) {
+    results.innerHTML = `<div>Hech narsa topilmadi 😢</div>`;
+    return;
+  }
+
+  filtered.forEach((b) => {
+    const div = document.createElement("div");
+    div.textContent = b;
+    results.appendChild(div);
+
+    // Har bir brandni bosganda inputga tushadi
+    div.addEventListener("click", () => {
+      input.value = b;
+      results.innerHTML = "";
+    });
+  });
+}
+
+input.addEventListener("input", showResults);
+input.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") showResults();
+});
+button.addEventListener("click", showResults);

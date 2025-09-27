@@ -100,7 +100,7 @@ span {
 
 .child:hover {
   transition: all 0.7s;
-  transform: translateY(-50px) scale(1.09);
+  transform: translateY(-50px) scale(1);
   background: linear-gradient(rgb(197, 175, 175));
 }
 
