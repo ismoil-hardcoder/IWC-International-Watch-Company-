@@ -26,15 +26,12 @@
 }
 
 .search-box input {
-  flex: 1;
+  flex: flex;
   border: none;
-  outline: none;
   padding: 10px;
   font-size: 14px;
   color: #333;
   background: none;
-  min-width: 0;
-  box-sizing: border-box;
   padding-bottom: 60px;
 }
 
