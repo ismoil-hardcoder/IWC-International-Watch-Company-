@@ -51,16 +51,7 @@
 }
 
 .watch3 {
-  background: linear-gradient(
-    135deg,
-    #0a0a0f,
-    rgb(16, 16, 82),
-    rgb(97, 1, 84),
-    rgb(27, 23, 23),
-    #1a2a3a,
-    #491b78,
-    #e80808
-  );
+  background-color: white;
 }
 
 @media (max-width: 1050px) {

@@ -32,21 +32,14 @@
 }
 
 .about-section-new {
-  background: linear-gradient(
-    bisque,
-    cornsilk,
-    rgb(222, 214, 193),
-    antiquewhite,
-    bisque,
-    bisque
-  );
+  background-color: aliceblue;
   border-radius: 100px;
   padding-top: 63px;
   padding-bottom: 63px;
 }
 
 .new-about {
-  background: linear-gradient(bisque, brown, black);
+  background-color: white;
 }
 
 @media (max-width: 1168px) {
