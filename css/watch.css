@@ -11,8 +11,16 @@ span {
   display: flex;
 }
 
+.tentak-semiz-img-cardi {
+  width: 250px;
+}
+
+.child img {
+  width: 250px;
+}
+
 .child {
-  background: #e9dfdf;
+  background-color: #f6f6f6;
   border-radius: 12px;
   padding: 20px;
   text-align: center;
