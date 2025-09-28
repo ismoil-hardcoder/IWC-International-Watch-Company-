@@ -20,6 +20,8 @@
 }
 
 header {
+  z-index: 10; /* pastroq qilib qo'y */
+
   background: linear-gradient(90deg, #000000, #0a0f2c);
 }
 
