@@ -108,7 +108,7 @@ span {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 100px 0px;
+  padding: 50px 0px;
 }
 
 .child h4 {
@@ -138,5 +138,16 @@ span {
 @media (max-width: 770px) {
   .watch-section {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 370px) {
+  .child {
+    padding: 5px;
+    padding: 10px 28px;
+  }
+
+  .child img {
+    width: 100%;
   }
 }
